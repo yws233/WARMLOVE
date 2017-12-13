@@ -1,0 +1,343 @@
+/*
+    全局部分
+*/
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: #5082F9;
+}
+.global{
+    width: 1351px;
+    height: 900px;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.global:after{
+    content: "";
+    clear: both;
+    height: 0;
+}
+/*h1{
+    color: red;
+}*/
+/*
+    头部导航部分
+*/
+.head-nav{
+    width: 1351px;
+    height: 46px;
+    /*border: 1px solid red;*/
+    position: relative;
+
+}
+.head-nav:after{
+    content: "";
+    clear: both;
+    height: 0;
+}
+.head-text{
+    color: #67737F;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 46px;
+}
+.head-ul{
+    list-style: none;
+}
+.head-ul li{
+    float: left;
+}
+.head-ul-li1{
+    background: url("../img/head1.png") no-repeat 0 10px;
+    padding-left: 30px;
+    margin-left: 96px;
+    height: 46px;
+}
+.head-ul-li2{
+    background: url("../img/head2.png") no-repeat 0 10px;
+    padding-left: 25px;
+    margin-left: 32px;
+    height: 46px;
+}
+.head-ul-li3{
+    margin-left: 916px;
+    margin-right: 42px;
+}
+/*.head-ul-li3 .head-a3 span{
+    background: url("../img/head4.png") no-repeat 53px;
+    padding-right: 30px;
+}*/
+/*
+    画出下标小三角导航按钮
+*/
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: 21px;
+    margin-left: 2px;
+    vertical-align: top;
+    border-top: 4px solid #66757f;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+
+.head-a3 :hover{
+    text-decoration: underline;
+}
+
+.head-ul-li3 small,span{
+    line-height: 46px;
+    color: #67737F;
+}
+.head-ul-li3 span{
+    font-size: 13px;
+    font-weight: bold;
+}
+/*
+    主体内容部分
+*/
+.context{
+    width: 1351px;
+    height: 852px;
+   /* border: 1px solid green;*/
+    background: url("../img/context.jpg") round fixed; /*fixed设置背景不随窗口滑动*/
+    position: relative;
+}
+.context:after{
+    content: "";
+    clear: both;
+    height: 0;
+}
+.context-text{
+    width: 470px;
+    height: 328px;
+    color: #FFFFFF;
+    margin-left: 247px;
+    margin-top: 61px;
+    display: inline-block;
+    font-weight: bold;
+}
+.context-text h1{
+    color: #FFFFFF;
+    font-size: 27px;
+    line-height: 32px;
+}
+.context-text p{
+    margin-top: 37px;
+    font-size: 21px;
+    line-height: 28px;
+}
+.context-card1{
+    width: 300px;
+    height: 120px;
+    border: 1px solid #e6ecf0;
+    float: right;
+    background: #FFFFFF;
+    margin-bottom: 11px;
+    display: block;
+    margin-top: 70px;
+    margin-right: 254px;
+}
+.context-form{
+    margin: 12px 12px 6px;
+}
+.context-form-username-input{
+    color: rgb(0, 0, 0);
+    border: 1px solid #ccd6dd;
+    width: 266px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 4px;
+    background: rgb(250,255,189);
+    display: inline-block;
+}
+.context-form-pwd-input{
+    color: rgb(0, 0, 0);
+    border: 1px solid #ccd6dd;
+    width: 209px;
+    line-height: 20px;
+    padding: 4px;
+    margin: 0;
+    outline: 0;
+    background: rgb(250,255,189);
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.login-btn{
+    background: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 100px;
+    margin-left: 6px;
+    white-space: nowrap;
+    display: inline-block;
+
+}
+.remember-click input{
+    border-radius: 3px;
+}
+.remember-click span{
+    text-align: left;
+    color: #657786;
+    font-size: 12px;
+}
+.forgot{
+    color: #1c94e0;
+    font-size: 12px;
+    display: inline;
+    line-height: 16px;
+}
+.register{
+    border: 1px solid #e6ecf0;
+    background: #fff;
+    float: right;
+    padding-bottom: 8px;
+    width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.register h2{
+    border-bottom: 1px solid #e6ecf0;
+    color: #66757f;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    position: relative;
+    background: #FFFFFF;
+}
+.register strong{
+    font-size: 18px;
+    line-height: 22px;
+    color: #14171a;
+}
+.context-form-register{
+    display: block;
+}
+.text-input{
+    border: 1px solid #ccd6dd;
+    width: 266px;
+    height: 20px;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+}
+.text-input-email{
+    border: 1px solid #ccd6dd;
+    width: 266px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+}
+.field{
+    display: block;
+    margin: 6px auto;
+    width: 276px;
+}
+.register-submit{
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    float: right!important;
+    border-radius: 100px;
+    font-weight: bold;
+}
+.context-card1{
+    position: relative;
+}
+.photo-origin{
+    margin-top: 27px;
+    margin-left: 253px;
+    width: 400px;
+    height: 60px;
+    display: block;
+    float: left;
+}
+.origin-text{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.origin-username{
+    color: #fff;
+    clear: both;
+    float: left;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    direction: ltr;
+    text-align: left;
+}
+.origin-username span{
+    color: #FFFFFF;
+}
+.tweet-time{
+    clear: both;
+    float: left;
+    /*margin-bottom: 7px;*/
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*
+    尾部
+*/
+.foot-text{
+    color: rgba(255,255,255,0.2);
+    bottom: 30px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    bottom: 30px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.foot-text ul li{
+    margin: 0 6px 0 0;
+    display: inline;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.foot-text ul li span{
+    color: #FFFFFF;
+}
