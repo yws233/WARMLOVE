@@ -108,7 +108,7 @@ a:visited{
     width: 1351px;
     height: 852px;
    /* border: 1px solid green;*/
-    background: url("../img/context.jpg") round fixed; /*fixed设置背景不随窗口滑动*/
+    background: url("../img/contextbg1.jpg") round fixed; /*fixed设置背景不随窗口滑动*/
     position: relative;
 }
 .context:after{

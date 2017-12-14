@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>WARMLOVE</title>
     <link href="../css/loginPage.css" rel="stylesheet" type="text/css">
+    <!--<script type="text/javascript" src="../js/loginPage.js"></script>-->
 </head>
 <body>
     <div class="global">
@@ -14,7 +15,7 @@
                     <a class="head-a1" href="https://yws.fun"><span class="head-text">主页</span></a>
                 </li>
                 <li class="head-ul-li2">
-                    <a class="head-a2" href="https://yws.fun"><span class="head-text">瞬间</span></a>
+                    <a class="head-a2" href="#"><span class="head-text" onclick="changeBG()">瞬间</span></a>
                 </li>
                 <li class="head-ul-li3">
                     <a href="#" class="head-a3">
@@ -26,7 +27,7 @@
             </ul>
         </div>
         <!--主体内容部分-->
-        <div class="context">
+        <div id="context" class="context">
             <div class="context-text">
                 <h1>欢迎使用 Twitter。</h1>
                 <p>联系你的好友和更多精彩。获取你感兴趣的实时更新。并通过每个视角观看事件实时呈现。</p>
@@ -112,7 +113,8 @@
                 </ul>
             </div>
         </div>
-
+        <!--引入js文件-->
+        <script type="text/javascript" src="../js/loginPage.js"></script>
     </div>
 </body>
 </html>
