@@ -12,6 +12,8 @@ a{
 a:hover{
     color: #1da1f2;
 }
+form{border: none;
+}
 .global-head{
     width: 1326px;
     height: 46px;
@@ -64,6 +66,10 @@ a:hover{
 .global-head-nav-search{
     position: relative;
     left: 230px;
+    border: none;
+}
+.global-head-nav-search label{
+    border: none;
 }
 .head-nav-search and send{
     position: relative;
@@ -86,6 +92,7 @@ a:hover{
     padding: 8px 32px 8px 12px;
     transition: all .2s ease-in-out;
     position: relative;
+    outline: none; /*去掉input边框*/
 }
 .search-input-submitBtn {
     margin-top: 3px;
