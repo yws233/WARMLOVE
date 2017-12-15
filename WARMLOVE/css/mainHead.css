@@ -1,0 +1,153 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #687380;
+}
+a:hover{
+    color: #1da1f2;
+}
+.global-head{
+    width: 1326px;
+    height: 46px;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.global-head:after{
+    content: "";
+    clear: both;
+    height: 0;
+}
+.global-head-nav{
+    width: 1190px;
+    height: 44px;
+    /*border: 1px solid green;*/
+}
+.global-head-nav-ul1 li{
+    float: left;
+}
+.global-head-nav-ul1 a{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 3.5;
+    padding: 0 14px 0 4px;
+}
+.global-head-a1{
+    background: url("../headImg/head1.png") no-repeat 0px 10px ;
+}
+.global-head-a2{
+    background: url("../headImg/head2.png") no-repeat 0px 10px;
+}
+.global-head-a3{
+    background: url("../headImg/head3.png") no-repeat 0px 10px;
+}
+.global-head-a4{
+    background: url("../headImg/head4.png") no-repeat 0px 10px;
+}
+/*
+    推特小图标，点击获取内容
+*/
+.global-head-a5{
+    background: url("../headImg/head5.png") no-repeat 0px 10px;
+    margin-left: 281px;
+}
+.head-a1-nav-text1{
+    margin-left: 25px;
+}
+.global-head-nav-search{
+    position: relative;
+    left: 230px;
+}
+.head-nav-search and send{
+    position: relative;
+    content: "";
+    height: 0;
+}
+.search-input{
+    margin-top: 7px;
+    margin-left: 240px;
+    background-color: #f5f8fa;
+    border-radius: 21px;
+    border: 1px solid #e6ecf0;
+    box-sizing: border-box;
+    color: #14171a;
+    display: block;
+    font-size: 12px;
+    height: 32px;
+    line-height: 16px;
+    padding: 8px 32px 8px 12px;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+.search-input-submitBtn {
+    margin-top: 3px;
+    width: 25px;
+    height: 23px;
+    text-align: center;
+    background: url("../headImg/head6.png") no-repeat;
+    position: absolute;
+    top: 3px;
+    right: 410px;
+    border: none;
+}
+/*
+    个人资料与账户头像点击
+*/
+.personal-data{
+    float: left;
+    position: relative;
+
+}
+.show-personal{
+   /* height: 25px;
+    width: 25px;
+    border: 1px solid red;
+    border-radius: 50%;
+    opacity: 1;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all .15s ease-in-out;*/
+    position: absolute;
+    right: -480px;
+    top: -45px;
+}
+.personal-img{
+    transition: box-shadow .15s ease-in-out;
+    height: 32px;
+    width: 32px;
+    display: block;
+    border-radius: 50%;
+    color: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+}
+.send-Twitter-btn{
+    position: relative;
+    top: -45px;
+    right: -500px;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    text-align: center;
+    white-space: nowrap;
+    background: #1da1f2;
+    transition: box-shadow .15s ease-in-out;
+    border: 1px solid #1da1f2;
+}
+.send-text{
+    color: #FFFFFF;
+}

@@ -248,6 +248,7 @@ a:visited{
 }
 .remember-click input{
     border-radius: 3px;
+    margin-left: 12px;
 }
 .remember-click span{
     text-align: left;
