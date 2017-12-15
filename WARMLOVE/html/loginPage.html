@@ -7,7 +7,7 @@
     <!--<script type="text/javascript" src="../js/loginPage.js"></script>-->
 </head>
 <body>
-    <div class="global">
+    <div id="global" class="global">
         <!--头部导航栏-->
         <div class="head-nav">
             <ul class="head-ul">
@@ -19,15 +19,62 @@
                 </li>
                 <li class="head-ul-li3">
                     <a href="#" class="head-a3">
-                        <small>语言:</small>
-                        <span>简体中文</span>
-                        <b class="caret"></b>
+                        <small onclick="selectLG()">语言:</small>
+                        <span onclick="selectLG()">简体中文</span>
+                        <b id="caret-btn" class="caret" onclick="selectLG()"></b>
                     </a>
+                    <!--下拉语言选择栏-->
+                    <div id="seclg" class="head-nav-language">
+                        <ul class="select-language">
+                            <li role="presentation"><a href="?lang=zh-tw" data-lang-code="zh-tw" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="繁体中文">繁體中文</a></li>
+                            <li role="presentation"><a href="?lang=ja" data-lang-code="ja" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="日文">日本語</a></li>
+                            <li role="presentation"><a href="?lang=id" data-lang-code="id" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="印度尼西亚文">Bahasa Indonesia</a></li>
+                            <li role="presentation"><a href="?lang=msa" data-lang-code="msa" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="马来文">Bahasa Melayu</a></li>
+                            <li role="presentation"><a href="?lang=ca" data-lang-code="ca" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="加泰罗尼亚文">Català</a></li>
+                            <li role="presentation"><a href="?lang=cs" data-lang-code="cs" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="捷克文">Čeština</a></li>
+                            <li role="presentation"><a href="?lang=da" data-lang-code="da" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="丹麦文">Dansk</a></li>
+                            <li role="presentation"><a href="?lang=de" data-lang-code="de" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="德文">Deutsch</a></li>
+                            <li role="presentation"><a href="?lang=en" data-lang-code="en" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="英文">English</a></li>
+                            <li role="presentation"><a href="?lang=en-gb" data-lang-code="en-gb" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="英式英文">English UK</a></li>
+                            <li role="presentation"><a href="?lang=es" data-lang-code="es" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="西班牙文">Español</a></li>
+                            <li role="presentation"><a href="?lang=fil" data-lang-code="fil" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="菲律宾文">Filipino</a></li>
+                            <li role="presentation"><a href="?lang=fr" data-lang-code="fr" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="法文">Français</a></li>
+                            <li role="presentation"><a href="?lang=hr" data-lang-code="hr" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="克罗地亚文">Hrvatski</a></li>
+                            <li role="presentation"><a href="?lang=it" data-lang-code="it" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="意大利文">Italiano</a></li>
+                            <li role="presentation"><a href="?lang=hu" data-lang-code="hu" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="匈牙利文">Magyar</a></li>
+                            <li role="presentation"><a href="?lang=nl" data-lang-code="nl" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="荷兰文">Nederlands</a></li>
+                            <li role="presentation"><a href="?lang=no" data-lang-code="no" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="挪威文">Norsk</a></li>
+                            <li role="presentation"><a href="?lang=pl" data-lang-code="pl" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="波兰文">Polski</a></li>
+                            <li role="presentation"><a href="?lang=pt" data-lang-code="pt" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="葡萄牙文">Português</a></li>
+                            <li role="presentation"><a href="?lang=ro" data-lang-code="ro" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="罗马尼亚文">Română</a></li>
+                            <li role="presentation"><a href="?lang=sk" data-lang-code="sk" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="斯洛伐克文">Slovenčina</a></li>
+                            <li role="presentation"><a href="?lang=fi" data-lang-code="fi" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="芬兰文">Suomi</a></li>
+                            <li role="presentation"><a href="?lang=sv" data-lang-code="sv" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="瑞典文">Svenska</a></li>
+                            <li role="presentation"><a href="?lang=vi" data-lang-code="vi" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="越南文">Tiếng Việt</a></li>
+                            <li role="presentation"><a href="?lang=tr" data-lang-code="tr" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="土耳其文">Türkçe</a></li>
+                            <li role="presentation"><a href="?lang=el" data-lang-code="el" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="希腊文">Ελληνικά</a></li>
+                            <li role="presentation"><a href="?lang=bg" data-lang-code="bg" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="保加利亚文">Български език</a></li>
+                            <li role="presentation"><a href="?lang=ru" data-lang-code="ru" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="俄文">Русский</a></li>
+                            <li role="presentation"><a href="?lang=sr" data-lang-code="sr" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="塞尔维亚文">Српски</a></li>
+                            <li role="presentation"><a href="?lang=uk" data-lang-code="uk" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="乌克兰文">Українська мова</a></li>
+                            <li role="presentation"><a href="?lang=he" data-lang-code="he" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="希伯来文">עִבְרִית</a></li>
+                            <li role="presentation"><a href="?lang=ar" data-lang-code="ar" title="阿拉伯文" class="js-language-link js-tooltip" rel="noopener" role="menuitem">العربية</a></li>
+                            <li role="presentation"><a href="?lang=fa" data-lang-code="fa" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="波斯文">فارسی</a></li>
+                            <li role="presentation"><a href="?lang=mr" data-lang-code="mr" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="马拉地文">मराठी</a></li>
+                            <li role="presentation"><a href="?lang=hi" data-lang-code="hi" title="印地文" class="js-language-link js-tooltip" rel="noopener" role="menuitem">हिन्दी</a></li><br/>
+                            <li role="presentation"><a href="?lang=bn" data-lang-code="bn" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="孟加拉文">বাংলা</a></li>
+                            <li role="presentation"><a href="?lang=gu" data-lang-code="gu" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="古吉拉特文">ગુજરાતી</a></li>
+                            <li role="presentation"><a href="?lang=ta" data-lang-code="ta" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="泰米尔文">தமிழ்</a></li>
+                            <li role="presentation"><a href="?lang=kn" data-lang-code="kn" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="卡纳达文">ಕನ್ನಡ</a></li>
+                            <li role="presentation"><a href="?lang=th" data-lang-code="th" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="泰文">ภาษาไทย</a></li>
+                            <li role="presentation"><a href="?lang=ko" data-lang-code="ko" class="js-language-link js-tooltip" rel="noopener" role="menuitem" data-original-title="韩文">한국어</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
         <!--主体内容部分-->
-        <div id="context" class="context">
+        <div id="context" class="context" onmousemove="selectArea()">
             <div class="context-text">
                 <h1>欢迎使用 Twitter。</h1>
                 <p>联系你的好友和更多精彩。获取你感兴趣的实时更新。并通过每个视角观看事件实时呈现。</p>

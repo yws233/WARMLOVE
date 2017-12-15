@@ -11,11 +11,24 @@ function changeBG() {
         var rand = Math.floor(Math.random() * 5);
         document.getElementById("context").style.backgroundImage = image[rand];
 }
-/*function changeColor() {
-    document.getElementById("text-nav").style.color = "#4F82F9";
+/*
+* 宣言选择点击
+* 行内点击事件，注意获取元素的局部性，要定义为全局获取
+* */
+var select = document.getElementById("seclg");
+function selectLG() {
+    if (select.style.display == "none"){
+        select.style.display = "block";
+    }else {
+        select.style.display = "none";
+        select.style.zIndex = 0;
+    }
 }
-function changeColor2() {
-    document.getElementById("text-nav2").style.color = "#4F82F9";
-}*/
+
+function selectArea() {
+    select.style.display = "none";
+    select.style.zIndex = 0;
+}
+
 
 

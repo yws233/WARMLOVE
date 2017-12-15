@@ -8,6 +8,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    white-space:nowrap;
 }
 a:visited{
     color: #5082F9;
@@ -92,6 +93,8 @@ a:visited{
 }
 .head-text:hover{
     color: #4F82F9;
+    border-bottom: 3px solid #4F82F9;
+    padding-bottom: 15px;
 }
 .head-a3 :hover{
     text-decoration: underline;
@@ -104,6 +107,52 @@ a:visited{
 .head-ul-li3 span{
     font-size: 13px;
     font-weight: bold;
+}
+/*
+    语言选择导航栏
+*/
+.head-nav-language{
+    display: none;
+    width: 250px;
+    height: 630px;
+    position: absolute;
+    right: 111px;
+    /*z-index: 900;*/
+    top:100%;
+    float: left;
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    background-clip: padding-box;
+    border: 1px solid white;
+}
+.select-language li{
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    width: 50%; /*设置li5、5平分一行布局*/
+    line-height: 20px;
+
+}
+.select-language li:hover{
+    background: #9CBBF4;
+}
+.select-language li a{
+    position: relative;
+    font-size: 12px;
+    clear: both;
+    color: #66757f;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    float: none;
+    line-height: 20px;
+    margin: 0;
+    padding: 5px 20px;
+    white-space: nowrap;
 }
 /*
     主体内容部分
