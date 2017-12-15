@@ -71,6 +71,7 @@ a:hover{
     height: 0;
 }
 .search-input{
+    width: 218px;
     margin-top: 7px;
     margin-left: 240px;
     background-color: #f5f8fa;
@@ -94,7 +95,7 @@ a:hover{
     background: url("../headImg/head6.png") no-repeat;
     position: absolute;
     top: 3px;
-    right: 410px;
+    right: 380px;
     border: none;
 }
 /*
@@ -117,7 +118,7 @@ a:hover{
     font-weight: bold;
     transition: all .15s ease-in-out;*/
     position: absolute;
-    right: -480px;
+    right: -500px;
     top: -45px;
 }
 .personal-img{
@@ -134,7 +135,7 @@ a:hover{
 .send-Twitter-btn{
     position: relative;
     top: -45px;
-    right: -500px;
+    right: -520px;
     border-radius: 100px;
     box-shadow: none;
     cursor: pointer;
