@@ -2,6 +2,9 @@
     margin: 0 auto;
     padding: 0;
 }
+button{
+    cursor: pointer;
+}
 .global-main{
     width: 1351px;
     height: auto;
@@ -378,10 +381,10 @@ ul{
     outline: none;
 }
 .main-Twitter-show-context-bottom{
-    width: 510px;
+    width: 500px;
     height: 16px;
     display: table;
-    width: 100%;
+    /*width: 100%;*/
     font-size: 12px;
     padding-top: 1px;
     border: 1px solid #66757f;
@@ -422,9 +425,15 @@ ul{
     margin-right: 10px;
 }
 
+/*
+    发推时间
+*/
 
-
-
+.time span{
+    color: #657786;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
 
 /*
@@ -440,11 +449,73 @@ ul{
     font-size: 14px;
     line-height: 20px;
 }
-.time span{
-    color: #657786;
-    font-size: 14px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.main-context-right-top{
+    width: 290px;
+    height: 309px;
+    border: 1px solid red;
+}
+.main-context-right-top-show1{
+
 }
 
+.flex-module-header{
+    width: 258px;
+    height: 22px;
+    border: 1px solid rosybrown;
+    line-height: 16px;
+    color: #14171a;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.flex-module-header h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #14171a;
+    display: inline;
+    line-height: 22px;
+}
+.flex-module-header button{
+    text-rendering: optimizeLegibility;
+    color: #1DA1F2;
+    transition: box-shadow .15s ease-in-out;
+    overflow: visible;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: none;
 
+}
+.js-view-all-link{
+    color: #1DA1F2;
 
+}
+.main-context-right-top-show2{
+    width: 258px;
+    height: 194px;
+    border: 1px solid rosybrown;
+    opacity: 1;
+    color: #657786;
+    font-size: 12px;
+    line-height: 16px;
+}
+.main-context-right-top-show2-item{
+    border-bottom: 1px solid #e6ecf0;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+    min-height: 48px;
+}
+.main-context-right-top-show2-item-context-name{
+    font-size: 14px;
+    display: block;
+    line-height: 16px;
+    color: #1DA1F2;
+}
+.main-context-right-top-show2-item-context-image{
+    top: unset;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    
+}
