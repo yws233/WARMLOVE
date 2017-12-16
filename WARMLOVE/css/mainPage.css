@@ -518,3 +518,42 @@ ul{
     height: 48px;
     border-radius: 50%;
 }
+.account-group-inner{
+    display: block;
+    width: 100%;
+    color: #657786;
+    font-size: 14px;
+    margin-left: 65px;
+}
+.fullname{
+    word-break: break-all;
+    color: #14171a;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.focus-btn{
+    width: 89px;
+    height: 27px;
+}
+.focus-btn button{
+    min-width: 89px;
+    color: #1DA1F2;
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    transition: box-shadow .15s ease-in-out;
+    width: 89px;
+    height: 27px;
+    margin-left: 60px;
+}
+.focus-btn-font{
+    vertical-align: middle;
+    text-align: center;
+    color: #1DA1F2;
+    font-weight: bold;
+}
